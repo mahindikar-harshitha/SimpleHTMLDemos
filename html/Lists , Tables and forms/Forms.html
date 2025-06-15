@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/contact_me">
+        <!--action attribute specifies the url to which the form data should be sent when submitted
+        if not specified , form will be submitted to the current page's url-->
+
+        <!--input tag collects user data-->
+        Username: <input type="text" placeholder="name" required="true"><br>
+        Password: <input type="password"><br>
+
+        <!--name and value property 
+        name : Identifies form elements when submitting,should be unique
+        value : sets initial value for input elements , this is the data sent when form is submitted--> 
+        Age: <input type="text" name="age" value="age should be greater than 18"><br>
+
+        <!--label tag adds a text description to form elements , "for attribute" connects the label to a 
+        specific form element using the element's id , makes the form more accessible , enhances readability-->
+        <label for="departname">Depart_name</label>
+        <input type="text" id="departname" placeholder="enter depart name"><br>
+       
+
+        <!--we can enter date using input tag-->
+        DOB: <input type="date"><br>
+
+        <!--we can choose a file within the input tag-->
+        File: <input type="file"><br>
+
+        <!--we can range things within the input tag-->
+        Distance_range: <input type="range"> <br>
+
+        <!--button-->
+        <p>Agreement about the above details are correct</p>
+        Agree: <input type="button" value="agree">
+        Disagree: <input type="button" value="disagree"><br><br>
+
+        <!---radio button is used for choosing one option from multiple options available-->
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="Other"><br>
+
+        <!---Checkbox is used to choose multiple options-->
+        <p>Programming Languages known</p>
+        <label for="c">C Language:</label>
+        <input type="checkbox" id="c" name="Language" value="C"><br>
+        <label for="c++"> C++ Language:</label>
+        <input type="checkbox" name="Language" id="c++" value="C++"><br>
+        <label for="java">JAVA Language:</label>
+        <input type="checkbox" name="Language" id="java" value="JAVA"><br>
+        <label for="python">Python Language:</label>
+        <input type="checkbox" name="Language" id="python" value="Python"><br>
+        <br>
+
+        <!--select acts as dropdown when you have many options-->
+        <label for="state">Select your state</label>
+        <select name="State" id="state">
+            <option value="Telangana">Telangana</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="AP">AP</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Up">Up</option>
+        </select>
+        <br>
+        <br>
+
+        <!--text area tag is used to write multiline input -->
+        <textarea name="story" id="story" rows="5" colspan="30">write text here</textarea>
+        <br>
+        <input type="submit">
+        <br>
+        <br>
+        <!--iframe allows to embed another webpage or multimedia content within a webpage-->
+        <iframe src="https://www.w3schools.com/html/" height="100" width="100"></iframe>
+        <br>
+        <iframe src="https://en.wikipedia.org/wiki/Transportation_during_the_2024_Summer_Olympics_and_Paralympics" height="300" width="300"></iframe>r
+
+    </form>
+</body>
+</html>
